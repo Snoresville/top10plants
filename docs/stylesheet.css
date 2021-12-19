@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0px;
+    counter-set: list;
+
+    background-image: url("images/bliss.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    --section-margin: 3rem;
+
+    --border-size: 4px;
+    --border-color: rgb(99, 99, 99);
+}
+
+* {
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2::before {
+    counter-increment: list;
+    content: counter(list) " -\00a0" 
+}
+
+h1, h2, p {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    width: 100%;
+}
+
+#list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section {
+    margin-top: var(--section-margin);
+    margin-bottom: var(--section-margin);
+    margin-left: 5vw;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+.descriptor {
+    background-color: white;
+    width: 35%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+/* header and footer */
+
+header, footer {
+    background-color: rgb(134, 134, 134);
+    height: 150px;
+}
+
+header {
+    border-bottom: var(--border-size) solid var(--border-color);
+}
+footer {
+    border-top: var(--border-size) solid var(--border-color);
+}
