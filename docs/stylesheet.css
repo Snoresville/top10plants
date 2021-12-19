@@ -10,11 +10,10 @@ body {
     --section-margin: 3rem;
 
     --border-size: 4px;
-    --border-color: rgb(99, 99, 99);
+    --border-color: rgb(49, 49, 49);
 }
 
 * {
-    width: 100vw;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -38,37 +37,84 @@ h1 {
 #list {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
 
 section {
     margin-top: var(--section-margin);
     margin-bottom: var(--section-margin);
-    margin-left: 5vw;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+
+    padding: 50px;
+    background-attachment: fixed;
+    background-size: 500px 500px;
 }
+
 
 h2 {
     margin-bottom: 1em;
 }
 .descriptor {
     background-color: white;
-    width: 35%;
     padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    
+    text-align: center;
+}
+
+img {
+    height: max(35vw, 300px);
+    width: max(35vw, 300px);
 }
 
 
 /* header and footer */
 
 header, footer {
-    background-color: rgb(134, 134, 134);
     height: 150px;
 }
 
 header {
+    background-color: #2a9bf8;
     border-bottom: var(--border-size) solid var(--border-color);
 }
 footer {
+    background-color: rgb(66, 119, 53);
     border-top: var(--border-size) solid var(--border-color);
+}
+
+
+/* backgrounds */
+
+#cactus {
+    background-image: url("images/cactus.jpg");
+}
+#lavender {
+    background-image: url("images/lavender.jpg")
+}
+#oak_tree {
+    background-image: url("images/oak_tree.jpg")
+}
+#grass {
+    background-image: url("images/grass.jpg")
+}
+#sunflower {
+    background-image: url("images/sunflower.jpg")
+}
+#mushroom {
+    background-image: url("images/mushroom.jpg")
+}
+#pines {
+    background-image: url("images/pines.jpg")
+}
+#sakura {
+    background-image: url("images/sakura.jpg")
+}
+#tumbleweed {
+    background-image: url("images/tumbleweed.jpg")
+}
+#gloom_shroom {
+    background-image: url("images/gloom_shroom.png")
 }
